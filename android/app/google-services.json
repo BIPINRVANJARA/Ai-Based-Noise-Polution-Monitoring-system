@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1035616038700",
+    "project_id": "noiseguard-9c13c",
+    "storage_bucket": "noiseguard-9c13c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035616038700:android:3e437286597761716d8689",
+        "android_client_info": {
+          "package_name": "com.kyvraone.noiseguard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmgi5K0kqzrFWbU2MP3zzA7lZTYe_DRA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
