@@ -10,6 +10,32 @@ An end-to-end IoT, Edge-AI, and Mobile system designed for real-time acoustic mo
 
 ---
 
+## 📸 Implementation & Live Working
+
+### 1. Mobile Application in Action
+<p align="center">
+  <img src="docs/images/app_home_live_dashboard.jpg" width="360" alt="Live Acoustic Sampling - 39.3 dB Quiet Ambient" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/images/app_analytics_insights.jpg" width="360" alt="Analytics & Insights - Real ESP32 Firestore Stream" />
+</p>
+
+- **Live Acoustic Sampling (Left)**: Connected in real-time to the ESP32 node (`NG-ESP32-001`) via Cloud Firestore, accurately measuring ambient quiet room SPL at **39.3 dB** with **94% confidence** for "Quiet Ambient".
+- **Analytics & Insights (Right)**: Real-time telemetry processing displaying daily trend curves, violation tracking (408 events detected), peak level capture (115.0 dB), and TinyML acoustic source breakdown (**Traffic 40%**, **Horn 25%**, **Construction 15%**, **Factory 10%**, **Crowd 5%**).
+
+---
+
+### 2. Edge Hardware Node
+<p align="center">
+  <img src="docs/images/hardware_esp32_active.jpg" width="460" alt="Active ESP32 Edge Node with INMP441 Microphone" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/images/hardware_wiring_setup.jpg" width="360" alt="Breadboard Wiring & Pinout Setup" />
+</p>
+
+- **Active ESP32 Node (Left)**: Running continuous <10ms I2S audio DSP, 512-point FFT, and TinyML classification with live power and status indicators.
+- **Hardware Prototyping Setup (Right)**: INMP441 omnidirectional MEMS digital microphone module interfaced via I2S bus (GPIO 32, 25, 33) on breadboard with dedicated power rails.
+
+---
+
 ## 🏛️ System Architecture
 
 ```
@@ -117,16 +143,6 @@ For full schematics and step-by-step wiring instructions, see [WIRING.md](WIRING
    ```bash
    flutter build apk --debug
    ```
-
----
-
-## 📱 Mobile App Screenshots & Screens
-
-- **Dashboard**: Real-time animated circular gauge, min/avg/max levels, edge-AI source prediction card, device battery & connectivity metrics.
-- **Geospatial Map**: Real-time noise density heatmap with color-coded safety zones.
-- **Analytics**: Historical line charts, sound source donut distributions, and 24-hour peak hour bar charts.
-- **Alerts & Diagnostics**: Violation incident logs paired with Google Gemini AI diagnostic reports.
-- **AI Summary**: AI-generated civic summaries and municipal noise mitigation policies.
 
 ---
 

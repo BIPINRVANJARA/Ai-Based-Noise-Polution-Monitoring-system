@@ -4,6 +4,16 @@
 
 ---
 
+## 📷 Physical Hardware Setup
+
+<p align="center">
+  <img src="docs/images/hardware_wiring_setup.jpg" width="400" alt="Breadboard Wiring Setup" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/images/hardware_esp32_active.jpg" width="460" alt="Active ESP32 with INMP441 Mic" />
+</p>
+
+---
+
 ## Components Required
 
 | # | Component | Qty | Purpose |
